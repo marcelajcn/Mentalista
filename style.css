@@ -1,0 +1,117 @@
+:root {
+    --bg-principal: #000000;
+    --letras-principal: #fccccf;
+  }
+  
+  * {
+    margin: 0;
+    font-weight: bold;
+    border: none;
+    outline: none;
+  }
+  
+  body {
+    font-family: "Ubuntu", sans-serif;
+    background-color: var(--bg-principal);
+    color: var(--letras-principal);
+    text-align: center;
+  }
+  
+  #container {
+    margin-top: 35vh;
+  }
+  
+  .marginTop {
+    margin-top: 20vh !important;
+    transition: 700ms;
+  }
+  
+  #bem-vindo > h1 {
+    font-size: 3rem;
+    margin-bottom: 2%;
+  }
+  
+  #bem-vindo > p {
+    font-size: 1.7rem;
+    margin-bottom: 30px;
+  }
+  
+  #bem-vindo > p > span {
+    background-color: #118ab2;
+  }
+  
+  #bem-vindo > p > span::after {
+    content: "|";
+    opacity: 1;
+    animation: pisca 1s infinite;
+  }
+  
+  @keyframes pisca {
+    0%,
+    100% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  #bem-vindo > input {
+    color: var(--letras-principal);
+    background-color: #06d6a0;
+    border-radius: 5px;
+    width: 110px;
+    height: 35px;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .removerBotao {
+    display: none !important;
+  }
+  
+  #questao {
+    display: none;
+  }
+  
+  .comecou {
+    display: block !important;
+    margin-top: 20vh;
+  }
+  
+  #campo-resposta {
+    display: grid;
+    justify-content: center;
+  }
+  
+  .comecou > div > div > input {
+    height: 30px;
+    text-align: center;
+    appearance: textfield;
+    background-color: #adb5bd;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    width: 200px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  
+  #texto {
+    background-color: #e63946;
+    width: 200px;
+    margin-bottom: 5vh;
+    margin-top: -2.5vh;
+    border-radius: 5px;
+  }
+  
+  .comecou > div > input {
+    border-radius: 5px;
+    background-color: #a9d6e5;
+    height: 30px;
+    width: 110px;
+    font-size: 1.2rem;
+    margin-left: 20%;
+    cursor: pointer;
+  }
+  

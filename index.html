@@ -1,0 +1,44 @@
+<html lang="pt-br">
+
+<head>
+
+    <link rel="stylesheet" href="/style.css">
+
+
+  <title>Mentalista</title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="container">
+    <div id="bem-vindo">
+      <h1>Ment</h1>
+      <p>Imersão <span>dev</span></p>
+      <input id="comecar" type="button" value="Começar" onclick="comecar()">
+    </div>
+
+    <div id="questao">
+      <div>
+        <p>Digite um número de 0 a 10</p>
+      </div>
+
+      <div id="campo-resposta">
+        <div>
+          <input type="number" id="input-numero">
+          <p id="texto"></p>
+        </div>
+
+        <input type="button" value="verificar" onclick="verificar()">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
